@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgs"
+    tools:context=".pizzas" >
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="376dp"
+        android:layout_height="236dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_española"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pizza Española $6.990"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_española_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mozzarella, choricillos, jamón, totate y pimenton"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_italiana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pizza Italiana $6.990"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_italiana_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mozzarella, jamón, tomate y oregano"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_tejana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pizza Tejana $7.490"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_tejana_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mozzarella, salsa BBQ, tocino, beef, cebolla y pimenton"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_peperoni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pizza de Peperoni $6.490"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_peperoni_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mozzarella y doble peperoni"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_queso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pizza Doble queso $6.490"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_queso_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mozzarella y chedar"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_vegetariana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pizza Vegetariana $6.990"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_vegetariana_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mozzarella, tomatea, aceitunas, champiñones, pimenton y cebolla"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Elige tu pizza!"
+        android:textColor="@android:color/background_dark"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <Button
+        android:id="@+id/btn_comprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="compra"
+        android:text="Comprar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949" />
+
+    <Spinner
+        android:id="@+id/spn_pizzas"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
+</androidx.constraintlayout.widget.ConstraintLayout>
