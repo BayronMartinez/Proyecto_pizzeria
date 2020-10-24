@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Main_Activity</string>
+    <string name="title_activity_mapa_act">Map</string>
 </resources>

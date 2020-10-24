@@ -54,7 +54,7 @@ public class Menu extends AppCompatActivity {
     }
     public void Mapa (View v)
     {
-        Intent i = new Intent(this, Mapa.class);
+        Intent i = new Intent(this, Mapa_act.class);
         startActivity(i);
     }
     public void Pizzas (View v)
