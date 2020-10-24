@@ -60,7 +60,7 @@ public class Menu extends AppCompatActivity {
     public void Pizzas (View v)
     {
         ArrayList<String> pizzas = new ArrayList<String>();
-        pizzas.add("Pizzas");
+        //pizzas.add("Pizzas");
         pizzas.add("Española");
         pizzas.add("Italiana");
         pizzas.add("Tejana");

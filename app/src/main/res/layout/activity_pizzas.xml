@@ -9,13 +9,14 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="376dp"
-        android:layout_height="236dp"
+        android:layout_width="349dp"
+        android:layout_height="237dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.245">
+        app:layout_constraintVertical_bias="0.248">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,7 +27,7 @@
                 android:id="@+id/txt_española"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pizza Española $6.990"
+                android:text="~Pizza Española $6.990"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -41,7 +42,7 @@
                 android:id="@+id/txt_italiana"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pizza Italiana $6.990"
+                android:text="~Pizza Italiana $6.990"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -56,7 +57,7 @@
                 android:id="@+id/txt_tejana"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pizza Tejana $7.490"
+                android:text="~Pizza Tejana $7.490"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -71,7 +72,7 @@
                 android:id="@+id/txt_peperoni"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pizza de Peperoni $6.490"
+                android:text="~Pizza de Peperoni $6.490"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -86,7 +87,7 @@
                 android:id="@+id/txt_queso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pizza Doble queso $6.490"
+                android:text="~Pizza Doble queso $6.490"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -120,7 +121,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¡Elige tu pizza!"
-        android:textColor="@android:color/background_dark"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -144,12 +144,37 @@
 
     <Spinner
         android:id="@+id/spn_pizzas"
-        android:layout_width="374dp"
+        android:layout_width="348dp"
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
+        app:layout_constraintVertical_bias="0.623" />
+
+    <EditText
+        android:id="@+id/ed_cobro"
+        android:layout_width="271dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Ingrese el pago de la pizza"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732" />
+
+    <TextView
+        android:id="@+id/txt_vuelto"
+        android:layout_width="272dp"
+        android:layout_height="45dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
 </androidx.constraintlayout.widget.ConstraintLayout>
