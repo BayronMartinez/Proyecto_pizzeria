@@ -8,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class pizzas extends AppCompatActivity {
 
     private Spinner pizzas;
@@ -17,13 +19,14 @@ public class pizzas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pizzas);
 
-        String[] productos = {"Pizzas", "Española", "Italiana", "Tejana", "Peperoni", "Doble queso", "Vegetariana"};
+        ArrayList<String> productos = (ArrayList<String>) getIntent().getSerializableExtra("productos");
         ArrayAdapter<String> adapt = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, productos);
         pizzas.setAdapter(adapt);
     }
 
     public void compra(View v)
     {
+
         String elegido = pizzas.getSelectedItem().toString();
         if(false == elegido.equals("Pizzas"))
         {

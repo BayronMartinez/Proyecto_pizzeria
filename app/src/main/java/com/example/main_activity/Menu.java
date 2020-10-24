@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
+import java.util.ArrayList;
+
 public class Menu extends AppCompatActivity {
 
     private ViewFlipper vf;
@@ -40,9 +42,9 @@ public class Menu extends AppCompatActivity {
 
     }
 
-    public void perfil (View v)
+    public void boleta (View v)
     {
-        Intent i = new Intent(this, perfil.class);
+        Intent i = new Intent(this, boleta_act.class);
         startActivity(i);
     }
     public void Informacion (View v)
@@ -57,7 +59,18 @@ public class Menu extends AppCompatActivity {
     }
     public void Pizzas (View v)
     {
+        ArrayList<String> pizzas = new ArrayList<String>();
+        pizzas.add("Pizzas");
+        pizzas.add("Española");
+        pizzas.add("Italiana");
+        pizzas.add("Tejana");
+        pizzas.add("Peperoni");
+        pizzas.add("Doble queso");
+        pizzas.add("Vegetariana");
+
         Intent i = new Intent(this, pizzas.class);
+        i.putExtra("productos",pizzas);
+
         startActivity(i);
     }
 }

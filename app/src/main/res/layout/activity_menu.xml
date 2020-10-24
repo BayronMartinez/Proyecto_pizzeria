@@ -134,17 +134,17 @@
                 android:layout_height="match_parent">
 
                 <ImageButton
-                    android:id="@+id/perfil"
+                    android:id="@+id/boleta"
                     android:layout_width="200dp"
                     android:layout_height="71dp"
-                    android:onClick="perfil"
+                    android:onClick="boleta"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/nutri_men" />
 
                 <TextView
-                    android:id="@+id/txt_perfil"
+                    android:id="@+id/txt_boleta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mi perfil"
