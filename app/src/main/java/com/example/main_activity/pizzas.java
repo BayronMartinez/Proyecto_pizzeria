@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import Clases.Presios;
+
 public class pizzas extends AppCompatActivity {
 
     private Spinner pizzas;
@@ -34,36 +36,98 @@ public class pizzas extends AppCompatActivity {
 
     public void compra(View v)
     {
+        Presios presio = new Presios();
+        int pago = Integer.parseInt(cobro.getText().toString());
         String elegido = pizzas.getSelectedItem().toString();
         if(elegido.equals("Española"))
         {
-            //
-            Toast.makeText(getApplicationContext(), "Compro una pizza " + elegido, Toast.LENGTH_SHORT).show();
+            if (pago >= presio.getEspañola())
+            {
+                int resultado = pago - presio.getEspañola();
+                vuelto.setText("Su vuelto es " + resultado);
+                Toast.makeText(getApplicationContext(), "Compro una pizza " + elegido, Toast.LENGTH_SHORT).show();
+            }
+            else
+            {
+                int resultado = presio.getEspañola() - pago;
+                vuelto.setText("Faltan " + resultado);
+                Toast.makeText(getApplicationContext(), "No se a efectuado la compra", Toast.LENGTH_SHORT).show();
+            }
         }
         else if(elegido.equals("Italiana"))
         {
-            //
-            Toast.makeText(getApplicationContext(), "Compro una pizza " + elegido, Toast.LENGTH_SHORT).show();
+            if (pago >= presio.getItaliana())
+            {
+                int resultado = pago - presio.getItaliana();
+                vuelto.setText("Su vuelto es " + resultado);
+                Toast.makeText(getApplicationContext(), "Compro una pizza " + elegido, Toast.LENGTH_SHORT).show();
+            }
+            else
+            {
+                int resultado = presio.getItaliana() - pago;
+                vuelto.setText("Faltan " + resultado);
+                Toast.makeText(getApplicationContext(), "No se a efectuado la compra", Toast.LENGTH_SHORT).show();
+            }
         }
         else if(elegido.equals("Tejana"))
         {
-            //
-            Toast.makeText(getApplicationContext(), "Compro una pizza " + elegido, Toast.LENGTH_SHORT).show();
+            if (pago >= presio.getTejana())
+            {
+                int resultado = pago - presio.getTejana();
+                vuelto.setText("Su vuelto es " + resultado);
+                Toast.makeText(getApplicationContext(), "Compro una pizza " + elegido, Toast.LENGTH_SHORT).show();
+            }
+            else
+            {
+                int resultado = presio.getTejana() - pago;
+                vuelto.setText("Faltan " + resultado);
+                Toast.makeText(getApplicationContext(), "No se a efectuado la compra", Toast.LENGTH_SHORT).show();
+            }
         }
         else if(elegido.equals("Peperoni"))
         {
-            //
-            Toast.makeText(getApplicationContext(), "Compro una pizza " + elegido, Toast.LENGTH_SHORT).show();
+            if (pago >= presio.getPeperoni())
+            {
+                int resultado = pago - presio.getPeperoni();
+                vuelto.setText("Su vuelto es " + resultado);
+                Toast.makeText(getApplicationContext(), "Compro una pizza " + elegido, Toast.LENGTH_SHORT).show();
+            }
+            else
+            {
+                int resultado = presio.getPeperoni() - pago;
+                vuelto.setText("Faltan " + resultado);
+                Toast.makeText(getApplicationContext(), "No se a efectuado la compra", Toast.LENGTH_SHORT).show();
+            }
         }
         else if(elegido.equals("Doble queso"))
         {
-            //
-            Toast.makeText(getApplicationContext(), "Compro una pizza " + elegido, Toast.LENGTH_SHORT).show();
+            if (pago >= presio.getDoble_queso())
+            {
+                int resultado = pago - presio.getDoble_queso();
+                vuelto.setText("Su vuelto es " + resultado);
+                Toast.makeText(getApplicationContext(), "Compro una pizza " + elegido, Toast.LENGTH_SHORT).show();
+            }
+            else
+            {
+                int resultado = presio.getDoble_queso() - pago;
+                vuelto.setText("Faltan " + resultado);
+                Toast.makeText(getApplicationContext(), "No se a efectuado la compra", Toast.LENGTH_SHORT).show();
+            }
         }
         else if(elegido.equals("Vegetariana"))
         {
-            //
-            Toast.makeText(getApplicationContext(), "Compro una pizza " + elegido, Toast.LENGTH_SHORT).show();
+            if (pago >= presio.getVegetariana())
+            {
+                int resultado = pago - presio.getVegetariana();
+                vuelto.setText("Su vuelto es " + resultado);
+                Toast.makeText(getApplicationContext(), "Compro una pizza " + elegido, Toast.LENGTH_SHORT).show();
+            }
+            else
+            {
+                int resultado = presio.getVegetariana() - pago;
+                vuelto.setText("Faltan " + resultado);
+                Toast.makeText(getApplicationContext(), "No se a efectuado la compra", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }
