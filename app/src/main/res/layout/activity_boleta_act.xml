@@ -97,12 +97,14 @@
                 android:id="@+id/btn_guardar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="agregar"
                 android:text="Guardar" />
 
             <Button
                 android:id="@+id/btn_actualizar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="actualizar"
                 android:text="Actualizar" />
         </TableRow>
 
@@ -114,12 +116,14 @@
                 android:id="@+id/btn_mostrar"
                 android:layout_width="154dp"
                 android:layout_height="match_parent"
+                android:onClick="mostrar"
                 android:text="Mostrar" />
 
             <Button
                 android:id="@+id/btn_eliminar"
                 android:layout_width="154dp"
                 android:layout_height="match_parent"
+                android:onClick="eliminar"
                 android:text="Eliminar" />
         </TableRow>
 
